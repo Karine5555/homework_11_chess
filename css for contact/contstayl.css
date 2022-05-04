@@ -1,0 +1,85 @@
+.all1{
+    height: auto;
+    padding: 5px;
+}
+.wrap{
+    width: 500px;
+    max-height: 600px;
+    margin: 0 auto;
+    border:5px solid rgb(227, 40, 102);
+    border-radius: 5px;
+}
+
+form{
+    width: 500px;
+    max-height: 500px;
+    padding: 7px;
+}
+h1{ color:rgb(227, 40, 102);
+    margin-bottom: 5px;
+}
+.formp{
+    font-size: 12px;
+    margin-bottom: 15px;
+    color:white
+}
+
+form p{
+    font-size: 11px;
+}
+form span{
+    color:rgb(227, 40, 102);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form input{
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border:2px solid rgb(227, 40, 102);
+}
+
+.firstname-label,
+.lastname-label{
+    width: 230px;
+    display: inline-block; /*vorpeszi irar koxq lini*/
+}
+.lastname-label{
+    margin:0 10px;
+}
+
+.firstname-input, 
+.lastname-input{
+    width: 100%;
+}
+.email-input{
+    width: 475px;
+}
+
+.message{
+    width: 475px;
+    max-height: 200px;/*200 avel chmecana*/
+    border-radius: 5px;
+    border:2px solid rgb(227, 40, 102);
+    padding: 5px;
+    resize: vertical;
+}
+
+.submit{
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+    background-color: rgb(227, 40, 102);
+    border: none;
+    color:white;
+    font-size: 20px;
+}
+
+form input:focus, form textarea:focus{
+    background-color: rgb(208, 110, 143);
+}
+
+.submit:hover{
+    background-color:rgb(208, 110, 143);
+}

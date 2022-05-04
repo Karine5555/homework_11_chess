@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+table{
+    width: 500px;
+    height: 500px;
+    border-collapse: collapse;
+    border:4px solid #93285B;
+    background-color: #D0BB9C;
+    margin: 0 auto;
+}
+table td:nth-child(n){/*բոլորին կպնել*/
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    
+    
+}
+
+table tr:nth-child(odd) td:nth-child(odd){ /*tr ի կենտ էլեմենտների միջի կենտ էլեմենտները*/
+    background: #AD5C32;
+    
+  }
+
+table tr:nth-child(even) td:nth-child(even){ /*tr ի կենտ էլեմենտների միջի կենտ էլեմենտները*/
+    background: #AD5C32;
+}
+
+
+      
+table tr:nth-child(n) td:first-child ,/* table-ի ,միջի բոլոր tr ների 1-ին td-ները*/
+table tr:nth-child(n) td:last-child,/* table-ի ,միջի բոլոր tr ների վերջին td-ները*/
+table tr:first-child td:nth-child(n),/* table-ի ,միջի 1-ին tr միջի բոլոր td*/
+table tr:last-child td:nth-child(n){/* table-ի ,միջի վերջին tr միջի բոլոր td*/
+    background-color:rgb(246, 237, 227);
+    font-size: 20px;
+    color:#AD5C32;
+    
+} 
+table tr:nth-child(2) td:nth-child(n):hover,/*table- միջի 2-րդ tr-ի բոլոր td-ները */
+table tr:nth-child(3) td:nth-child(n):hover,/*table- միջի 3-րդ tr-ի բոլոր td-ները */
+table tr:nth-child(8) td:nth-child(n):hover,/*table- միջի 8-րդ tr-ի բոլոր td-ները */
+table tr:nth-child(9) td:nth-child(n):hover{/*table- միջի 9-րդ tr-ի բոլոր td-ները */
+    cursor: pointer;
+    opacity: 0.5;   /*թափանցիկություն*/
+    font-size: 30px;
+    color:red;
+}
+table tr:nth-child(n) td:first-child:hover ,
+table tr:nth-child(n) td:first-child:hover ,
+table tr:nth-child(n) td:last-child:hover,
+table tr:first-child td:nth-child(n):hover,
+table tr:last-child td:nth-child(n):hover{
+    cursor:not-allowed;
+    opacity: 1;
+    font-size: 20px;
+    color:#AD5C32;
+    
+   
+}
